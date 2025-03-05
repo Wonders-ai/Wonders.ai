@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonders AI</title>
+    <style>
+        :root {
+            --primary: #4C409C;
+            --secondary: #E1E042;
+            --accent: #D884C4;
+            --dark: #131515;
+            --light: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .dark-mode {
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        h1 {
+            color: var(--secondary);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .toggle-dark-mode {
+            background-color: var(--secondary);
+            color: var(--dark);
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Wonders AI</h1>
+    <p>Your futuristic AI-powered solutions are here.</p>
+    <button class="toggle-dark-mode">Toggle Dark Mode</button>
+
+    <script>
+        document.querySelector('.toggle-dark-mode').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
